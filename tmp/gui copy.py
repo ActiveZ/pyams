@@ -117,8 +117,6 @@ class Ui_MainWindow(object):
         else:
             self.pushButton_5.setStyleSheet("border-image : url(images/dice5.png);")
 
-    
-
 
 if __name__ == "__main__":
     import sys
