@@ -11,14 +11,15 @@ def roll_dice(n):
 
 # ------------ COMBINAISONS 1 -------------
 
+# retourne les combinaisons possibles de la partie 1 du score
 def is_combinaison1(dice):
     result = {
-        "dice1": dice.count(1),
-        "dice2": dice.count(2),
-        "dice3": dice.count(3),
-        "dice4": dice.count(4),
-        "dice5": dice.count(5),
-        "dice6": dice.count(6)
+        "dice 1": dice.count(1),
+        "dice 2": dice.count(2) * 2,
+        "dice 3": dice.count(3) * 3,
+        "dice 4": dice.count(4) * 4,
+        "dice 5": dice.count(5) * 5,
+        "dice 6": dice.count(6) * 6
     }
     return result
 

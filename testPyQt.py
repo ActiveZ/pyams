@@ -1,27 +1,56 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget
-from PyQt5.QtGui import QIcon
+# from PyQt5.QtCore import Qt, QSize
+# from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QAction, QCheckBox, QStatusBar
+# from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 
-
-class Example(QWidget):
-    
-    def __init__(self):
-        super().__init__()
-        
-        self.initUI()
-        
-        
-    def initUI(self):
-        
-        self.setGeometry(300, 300, 300, 220)
-        self.setWindowTitle('Icon')
-        self.setWindowIcon(QIcon('web.png'))        
-    
-        self.show()
-        
-        
-if __name__ == '__main__':
-    
-    app = QApplication(sys.argv)
-    ex = Example()
-    sys.exit(app.exec_()) 
+class Window(QMainWindow): 
+    def __init__(self): 
+        super().__init__() 
+  
+        # setting title 
+        self.setWindowTitle("Python ") 
+  
+        # setting geometry left, top, width, height
+        self.setGeometry(1000, 100, 600, 400) 
+  
+        # calling method 
+        self.UiComponents() 
+  
+        # showing all the widgets 
+        self.show() 
+  
+    # method for widgets 
+    def UiComponents(self): 
+  
+        # creating a push button 
+        button = QPushButton(self) 
+        # button = QPushButton("CLICK", self) 
+  
+        # setting geometry of button 
+        button.setGeometry(200, 150, 100, 100) 
+  
+        # adding action to a button 
+        button.clicked.connect(self.clickme) 
+  
+        # setting image to the button 
+        button.setStyleSheet("border-image : url(images/dice4.png);") 
+  
+  
+  
+    # action method 
+    def clickme(self): 
+  
+        # printing pressed 
+        print("pressed") 
+  
+# create pyqt5 app 
+App = QApplication(sys.argv) 
+  
+# create the instance of our Window 
+window = Window() 
+  
+# start the app 
+sys.exit(App.exec()) 
