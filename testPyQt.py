@@ -35,16 +35,20 @@ class Window(QMainWindow):
         # adding action to a button 
         button.clicked.connect(self.clickme) 
   
+        button:pressed
         # setting image to the button 
-        button.setStyleSheet("border-image : url(images/dice4.png);") 
-  
+        button.setStyleSheet("border-image : url(images/dice4.png);")
+
+        button.setCheckable(True)
   
   
     # action method 
     def clickme(self): 
   
         # printing pressed 
-        print("pressed") 
+        print("pressed")
+        bt.setStyleSheet("border-image : url(images/dice1.png);")
+
   
 # create pyqt5 app 
 App = QApplication(sys.argv) 
