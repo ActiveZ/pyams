@@ -65,8 +65,15 @@ class Ui_MainWindow(object):
 
         # bt lancer
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_6.setGeometry(QtCore.QRect(210, 190, 381, 61))
+        self.pushButton_6.setGeometry(QtCore.QRect(70, 190, 280, 60))
         self.pushButton_6.setObjectName("pushButton_6")
+        self.pushButton_6.setText("Lancer")
+
+        # bt marquer
+        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_7.setGeometry(QtCore.QRect(450, 190, 280, 60))
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.pushButton_7.setText("Marquer")
 
         self.tableView = QtWidgets.QTableView(self.centralwidget)
         self.tableView.setGeometry(QtCore.QRect(50, 290, 256, 192))
@@ -83,13 +90,14 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        # self.retranslateUi(MainWindow)
+        # QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton_6.setText(_translate("MainWindow", "Lancer"))
+    # def retranslateUi(self, MainWindow):
+    #     _translate = QtCore.QCoreApplication.translate
+    #     MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+    #     self.pushButton_6.setText(_translate("MainWindow", "Lancer"))
+    #     self.pushButton_7.setText(_translate("MainWindow", "Marquer"))
 
     def btnstate(self):
         if self.pushButton_1.isChecked():
@@ -117,7 +125,7 @@ class Ui_MainWindow(object):
         else:
             self.pushButton_5.setStyleSheet("border-image : url(images/dice5.png);")
 
-    
+
 
 
 if __name__ == "__main__":
