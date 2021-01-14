@@ -9,3 +9,5 @@ pyuic5 -x gui.ui -o gui.py
 
 sudo pip install requests
 sudo pip install python-firebasepyuic5
+
+pip install git+https://github.com/ozgur/python-firebase
