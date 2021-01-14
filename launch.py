@@ -30,4 +30,17 @@ print("combinaisons 2:", is_combinaison2(tirage))
 
 p1 = Player("Joueur 1")
 p1.dice1 = 3
+p1.dice2 = 6
+p1.dice3 = 9
+p1.dice4 = 12
+p1.dice5 = 15
+p1.dice6 = 18
+p1.brelan = 20
+p1.carre = 20
+p1.full = True
+p1.petite_suite = True
+p1.grande_suite = True
+p1.yams = True
+p1.chance = 20
+
 print ( p1.toString())

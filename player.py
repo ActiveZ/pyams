@@ -22,7 +22,7 @@ class Player:
         return self.dice1 + self.dice2 + self.dice3 + self.dice4 + self.dice5 + self.dice6
 
     def get_bonus(self):
-        return 35 if(self.get_sous_total1() > 63) else 0
+        return 35 if(self.get_sous_total1() > 62) else 0
 
     def get_total1(self):
         return self.get_sous_total1() + self.get_bonus()
@@ -61,5 +61,5 @@ class Player:
 
         return txt
 
-p1 = Player("Joueur 1")
-print ( p1.toString())
+# p1 = Player("Joueur 1")
+# print ( p1.toString())
