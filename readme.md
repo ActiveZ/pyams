@@ -5,7 +5,7 @@ https://www.learnpyqt.com/
 https://p.yusukekamiyamane.com/
 
 pour compiler qtdesigner -> fichier py executable
-pyuic5 -x demo.ui -o demo.py
+pyuic5 -x gui.ui -o gui.py
 
 sudo pip install requests
-sudo pip install python-firebase
+sudo pip install python-firebasepyuic5

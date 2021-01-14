@@ -1,6 +1,6 @@
 import os
 from functions_combinaisons import *
-
+from player import Player
 
 os.system('cls')  # attention, sur ubuntu, remplacer par os.system('clear')
 
@@ -26,3 +26,8 @@ print("tirage: ", tirage)
 
 print("combinaisons 1:", is_combinaison1(tirage))
 print("combinaisons 2:", is_combinaison2(tirage))
+
+
+p1 = Player("Joueur 1")
+p1.dice1 = 3
+print ( p1.toString())
